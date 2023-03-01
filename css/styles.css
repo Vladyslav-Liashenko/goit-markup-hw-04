@@ -2,6 +2,7 @@
     --background-color:#2E2F42;
     --background-light-color: #F4F4FD;
     --hover-link: #4D5AE5;
+    --button-color: #404BBF;
     --border-bottom: #E7E9FC;
     --p_text: #434455;
     --fff: #FFFFFF;
@@ -50,7 +51,7 @@ ul {
     font-family: 'Raleway';
     font-style: normal;
     font-size: 18px;
-    color: #4D5AE5;
+    color: var(--hover-link);
 }
 .nav_studio {
     display: flex;
@@ -123,10 +124,10 @@ address {
 .order {
     margin-top: 48px;
     width: 169px;
-    background: #4D5AE5;
+    background: var(--hover-link);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: #4D5AE5;
+    border-color: var(--hover-link);
     color: var(--fff);
     font-size: 16px;
     font-family: 'Roboto';
@@ -270,7 +271,7 @@ address {
     text-decoration: none;
 }
 .web {
-    color: #4D5AE5;
+    color: var(--hover-link);
     font-size: 18px;
     font-family: 'Raleway';
 }
@@ -307,7 +308,7 @@ address {
     margin: 0 auto;
     padding: 0 16px;
     box-sizing: border-box;
-    color: #4D5AE5;
+    color: var(--hover-link);
 }
 .filter {
     margin: auto;
@@ -321,7 +322,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     padding: 12px 24px;
-    color: #4D5AE5;
+    color: var(--hover-link);
     background: var(--background-light-color);
     border-radius: 4px;
     font-family: 'Roboto';
@@ -330,7 +331,7 @@ button:hover,
 button:focus {
     border: 0;
     padding: 0%;
-    background: #404BBF;
+    background: var(--button-color);
     color: var(--fff);
     padding: 12px 24px;
     cursor: pointer;
@@ -383,7 +384,7 @@ img {
     width: 100%;
     height: 100%;
     padding: 24px 0px;
-    fill: #404BBF;
+    fill: var(--button-color)
 }
 .section1_svg_item {
     display: flex;
@@ -407,7 +408,7 @@ img {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #4D5AE5;
+    background-color: var(--hover-link);
     border-radius: 50%;
 }
 .section3_svg_item {
@@ -470,8 +471,8 @@ img {
     display: block;
     width: 100%;
     height: 100%;
-    border: 1px solid #404BBF;
-    fill: #404BBF;
+    border: 1px solid var(--button-color);
+    fill: var(--button-color);
 }
 /* Footter social */
 .container_footer{
