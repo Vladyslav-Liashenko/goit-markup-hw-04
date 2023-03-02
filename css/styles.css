@@ -36,7 +36,7 @@ body {
 .contacts_nav{
     position: relative;
 }
-.studio_nav::after,
+/* .studio_nav::after,
 .portfolio_nav::after,
 .contacts_nav::after {
     width: 100%;
@@ -48,7 +48,7 @@ body {
     position: absolute;
     bottom: 0;
     top: 40px;
-}
+} */
 li {
     list-style-type: none;
 }
