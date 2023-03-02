@@ -352,6 +352,7 @@ address {
     justify-content: center;
 }
 button {
+    font-weight: 500;
     border: 0;
     padding: 0%;
     font-size: 16px;
@@ -549,8 +550,8 @@ img {
     background-color: #31D0AA;;
 }
 .footer_svg_item {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: var(--background-light-color)
 }
 
