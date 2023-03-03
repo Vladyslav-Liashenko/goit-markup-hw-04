@@ -36,9 +36,9 @@ body {
 .contacts_nav{
     position: relative;
 }
-.studio_nav::after,
-.portfolio_nav::after,
-.contacts_nav::after {
+.studio_nav.current::after,
+.portfolio_nav.current::after,
+.contacts_nav.current::after {
     width: 100%;
     height: 4px;
     background-color: var(--button-color);
@@ -47,7 +47,7 @@ body {
     border-radius: 2px;
     position: absolute;
     bottom: 0;
-    top: 40px;
+    top: 44px;
 }
 li {
     list-style-type: none;
@@ -392,6 +392,7 @@ img {
 }
 .block_img:hover,
 .block_img:focus {
+    cursor: pointer;
     box-shadow: 
     0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -534,4 +535,34 @@ img {
 .sfooter_svg_item:hover,
 .footer_svg_item:focus {
     fill: var(--background-light-color);
+}
+/* Description img on portfolio */
+.img_text_description {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.info_img_portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hover-link);
+    background-blend-mode: soft-light;
+    mix-blend-mode: normal;
+    transform: translateY(100%);
+    transition: transform 250ms;
+}
+.block_img:hover .info_img_portfolio {
+    transform: translateY(0);
+}
+.text_info_img_portfolio {
+    margin: 0px;
+    color: var(--background-light-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding: 40px 32px 164px;
 }
